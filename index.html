@@ -1,38 +1,44 @@
 <html>
-<head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link href="css/styles.css" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-  <script src="js/scripts.js"></script>
-  <title>Find & Replace</title>
-</head>
-<body>
-  <div class="container">
-    <div class="jumbotron">
-    <h1>The Find and Replacer</h1>
-    <p><b>Step 1:</b> Enter in a sentence.
-      <br>
-      <b>Step 2:</b> Enter in the word you want replaced.
-      <br>
-      <b>Step 3:</b> Enter the word you want to replace it with.
-      <br>
-      <b>Step 4:</b> Hit "Replace" and watch the magic below!
-      <br>
-    </p>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Find & Replace</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+      <h1>The Find and Replacer</h1>
+      <p><b>Step 1:</b> Enter in a sentence.
+        <br>
+        <b>Step 2:</b> Enter in the word you want replaced.
+        <br>
+        <b>Step 3:</b> Enter the word you want to replace it with.
+        <br>
+        <b>Step 4:</b> Hit "Submit" and watch the magic below!
+        <br>
+      </p>
 
-    <form class="form">
-      <div class ="form-group">
-        <label for="replacer"></label>
-        <input type="text" class="form-control" id="sentence" placeholder="i.e. The little cat says woof woof">
-        <input type="text" class="form-control" id="originalword" placeholder="i.e. woof">
-        <input type="text" class="form-control" id="replacedword" placeholder="i.e. meow">
+      <form id="findReplace">
+        <div class ="form-group">
+          <label for="sentence"></label>
+          <input type="text" class="form-control" id="sentence" placeholder="i.e. The little cat says woof woof">
+          <label for="originalword"></label>
+          <input type="text" class="form-control" id="originalword" placeholder="i.e. woof">
+          <label for="replacedword"></label>
+          <input type="text" class="form-control" id="replacedword" placeholder="i.e. meow">
+        </div>
+        <button type="submit" class="btn btn-lg btn-success">Submit</button>
+      </form>
+
+      <div id="result">
+        <h3>Your magical new sentence:</h3>
+        <p></p>
       </div>
 
-      <button type="submit" class="btn btn-lg btn-success">Replace</button>
-    </form>
-
-    <div id="results"></div>
+      </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>

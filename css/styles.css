@@ -10,3 +10,7 @@ body {
   opacity: 0.85;
   filter: alpha(opacity=85); /* For IE8 and earlier */
 }
+
+#result{
+  display: none;
+}
