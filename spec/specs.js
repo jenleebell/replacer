@@ -1,6 +1,6 @@
-describe("finder", function() {
+describe("replacer", function() {
 
-  it("finds a word in a string", function(){
-    expect(finder("the cat says woof")).to.eql("woof")
+  it("finds one word in a sentence and replaces it with a new word", function(){
+    expect(findReplace("meow", "meow", "woof")).to.eql("woof")
   })
 })
